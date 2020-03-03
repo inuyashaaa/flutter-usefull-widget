@@ -1,5 +1,6 @@
 import 'package:animated/widgets/AnimatedContainer.dart';
 import 'package:animated/widgets/DrawerWidget.dart';
+import 'package:animated/widgets/HeroAnimation.dart';
 import 'package:animated/widgets/ScreenUtil.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
@@ -14,6 +15,7 @@ void main() => runApp(MaterialApp(
         '/drawer': (context) => DrawerWidgetCus(),
         '/dismiss': (context) => SwipeDismiss(),
         '/screenutil': (context) => ScreenUtilWidget(),
+        '/hero': (context) => HeroStart(),
       },
       home: MyApp(),
     ));
@@ -52,6 +54,12 @@ class MyApp extends StatelessWidget {
                 Navigator.pushNamed(context, '/screenutil');
               },
               child: Text('Screen Util'),
+            ),
+            FlatButton(
+              onPressed: () {
+                Navigator.pushNamed(context, '/hero');
+              },
+              child: Text('Hero Animation'),
             ),
           ],
         ),

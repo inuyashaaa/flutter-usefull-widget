@@ -25,7 +25,8 @@ class _SwipeDismissState extends State<SwipeDismiss> {
                 items.removeAt(index);
               });
               Scaffold.of(context).showSnackBar(
-                  SnackBar(content: Text(items[index] + ' dismissed')));
+                SnackBar(content: Text(items[index] + ' dismissed')),
+              );
             },
             child: ListTile(title: Text(items[index])),
           );
