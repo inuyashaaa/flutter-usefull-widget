@@ -98,7 +98,7 @@ class _ScreenUtilWidgetState extends State<ScreenUtilWidget> {
         onPressed: () {
           ScreenUtil.init(
             context,
-            width: 375,
+            width: 1000,
             height: 1334,
             allowFontScaling: false,
           );
