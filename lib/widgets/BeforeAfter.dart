@@ -37,6 +37,5 @@ class _BeforeAfterWidgetState extends State<BeforeAfterWidget> {
         ),
       ),
     );
-    ;
   }
 }

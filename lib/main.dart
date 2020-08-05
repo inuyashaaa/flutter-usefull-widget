@@ -13,6 +13,9 @@ import 'widgets/SwipeDismiss.dart';
 void main() => runApp(MaterialApp(
       title: 'Animated Container',
       debugShowCheckedModeBanner: false,
+      theme: ThemeData(
+        fontFamily: 'MrEavesXLModOT-Reg',
+      ),
       routes: {
         '/animated': (context) => AnimatedContainerWidget(),
         '/drawer': (context) => DrawerWidgetCus(),
@@ -39,17 +42,33 @@ class MyApp extends StatelessWidget {
         child: Column(
           children: <Widget>[
             CustomseButton(
-                routerName: '/animated', textButton: 'Animated Controller'),
-            CustomseButton(routerName: '/drawer', textButton: 'Drawer'),
-            CustomseButton(routerName: '/dismiss', textButton: 'Swipe Dismiss'),
+              routerName: '/animated',
+              textButton: 'Animated Controller',
+            ),
             CustomseButton(
-                routerName: '/screenutil', textButton: 'Screen Util'),
-            CustomseButton(routerName: '/hero', textButton: 'Hero Animation'),
+              routerName: '/drawer',
+              textButton: 'Drawer',
+            ),
             CustomseButton(
-                routerName: '/liquidpull',
-                textButton: 'Liquid pull to refresh'),
+              routerName: '/dismiss',
+              textButton: 'Swipe Dismiss',
+            ),
             CustomseButton(
-                routerName: '/beforeafter', textButton: 'Before After'),
+              routerName: '/screenutil',
+              textButton: 'Screen Util',
+            ),
+            CustomseButton(
+              routerName: '/hero',
+              textButton: 'Hero Animation',
+            ),
+            CustomseButton(
+              routerName: '/liquidpull',
+              textButton: 'Liquid pull to refresh',
+            ),
+            CustomseButton(
+              routerName: '/beforeafter',
+              textButton: 'Before After',
+            ),
           ],
         ),
       ),
